@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+
+        <title>Personal Casino</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="shortcut icon" href="./assets/images/favicon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+        <link rel="stylesheet" href="./assets/css/font-awesome.css">
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    </head>
+    <body>
+       
+        <div class="container">
+            
+            
+            <h1 class='my-5'>
+                <i class="fas fa-dice"></i>
+                <span>Personal Casino</span>
+            </h1>
+
+            <div class="dices d-flex justify-content-center m-4">
+
+                <img id='dice1Image' class='border shadow m-3' src='./assets/images/3.png'>
+                <img id='dice2Image' class='border shadow m-3' src='./assets/images/6.png'>
+
+            </div>
+
+            <h4 id="messagePlace" class='alert alert-info d-none'>Место для сообщений!</h4>
+
+            <h3 class='my-4'>
+                Ваш баланс: 
+                <output  id='userBalance'>10000</output>
+            </h3>
+
+            <div class="row my-4 fs-4">
+
+                <div class="col d-flex align-items-center">
+                    <span>Сумма ставки:</span>  
+                    <input type="number" class='flex-grow-1 mx-2' id="userBet" min="0" max="9999" step='10'> 
+                    <span> грн.</span>
+                </div>
+
+                <div class="col d-flex align-items-center">
+                    Ставлю на число: 
+                    <input type="number" class='flex-grow-1 ml-2'id="userOption" min="2" max="12">
+                </div>
+            </div>
+            
+
+            <button class='btn btn-lg btn-primary my-4 w-100 p-2' id='gameButton'>
+                <i style='transform:rotate(20deg);' class="fas fa-dice-five"></i>
+                Играть!
+            </button>
+
+        </div>
+        <script src="./assets/js/app.js"></script>
+    </body>
+</html>

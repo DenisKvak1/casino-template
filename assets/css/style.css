@@ -1,0 +1,19 @@
+
+    @font-face{
+        font-family: 'JetBrains Mono';
+        src: url('../fonts/JetBrainsMono-Regular.woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    * {
+        font-family: 'JetBrains Mono' ;
+    }
+
+
+    .card > img{
+        height: 240px;
+        object-fit: cover;
+        object-position: center;
+    } 
+    
